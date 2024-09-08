@@ -1,0 +1,111 @@
+.footer {
+  background-color: #0f0f0f;
+  padding: 50px 0 30px;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+
+    .footer__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .footer__block-wrapper {
+      margin-bottom: 80px;
+    }
+
+    .footer__block-text {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        color: #ffffffda;
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        text-decoration: none;
+      }
+    }
+
+    .footer__block--phone {
+      .footer__block-wrapper {
+        margin: 0 auto;
+      }
+
+      .footer__block-suptitle {
+        @media (max-width: 1199px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .footer__block--contacts {
+      text-align: right;
+
+      .footer__block-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 13px;
+      }
+    }
+  }
+
+  .footer__block-title {
+    color: #fff;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+
+  .footer__block-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__block-suptitle {
+    color: #909090;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+.footer.mobile {
+  display: none;
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 34px;
+
+    .footer__block-wrapper {
+      margin: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  .footer__block--contacts {
+    text-align: left;
+
+    .footer__block-text {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

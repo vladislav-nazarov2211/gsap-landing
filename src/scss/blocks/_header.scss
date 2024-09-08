@@ -1,0 +1,86 @@
+.header {
+  width: 100vw;
+  height: 90px;
+  z-index: 10000;
+  color: black;
+  @media (max-width: 767px) {
+    height: 70px;
+  }
+  .container {
+    height: 100%;
+  }
+
+  .header__bg {
+    background-color: transparent;
+    transition: 0.5s;
+    height: 100%;
+    width: 100vw;
+  }
+}
+
+.header--fixed {
+  position: fixed;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  .burger {
+    @media (max-width: 767px) {
+      width: 24px;
+      top: -6px;
+      position: relative;
+    }
+    svg {
+      fill: #ffffff;
+      transition: 1s;
+    }
+  }
+}
+
+.header__bg.header--black {
+  background-color: rgb(255, 255, 255);
+
+  transition: 1s;
+  svg {
+    fill: #000000;
+    transition: 1s;
+    stroke: #000000;
+  }
+
+  span {
+    color: #000000;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  .logo {
+    opacity: 1;
+
+    svg {
+      stroke: #ff695a;
+    }
+  }
+
+  .phone-icon {
+    path {
+      fill: #000000;
+    }
+  }
+
+  .menu-header {
+    svg {
+      fill: #ffffff;
+      stroke: transparent;
+    }
+  }
+}
+
+small {
+  opacity: 1 !important;
+}

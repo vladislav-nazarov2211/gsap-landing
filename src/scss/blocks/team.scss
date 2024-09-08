@@ -1,0 +1,79 @@
+.team {
+  position: relative;
+
+  @media (max-width: 1199px) {
+    height: 740px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: 350px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .team__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 860px;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      max-width: 100%;
+      padding: 0 25px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
+
+    .team__content-text {
+      color: #fff;
+      text-align: center;
+      font-family: "Inter";
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38px;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+      }
+    }
+
+    .team__content-subtitle {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: "Inter";
+      margin-top: 20px;
+      text-align: center;
+      display: inline-block;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        margin-top: 12px;
+        text-align: left;
+      }
+
+      &:hover {
+        color: #ff695a;
+      }
+    }
+  }
+
+  .team__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    top: 60%;
+  }
+}

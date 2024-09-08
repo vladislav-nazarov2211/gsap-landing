@@ -1,0 +1,201 @@
+.logo--bg {
+  .s1 {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+
+    animation: anim 0.2s linear 1s forwards;
+  }
+
+  .s2 {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+
+    animation: anim 0.1s linear 1.2s forwards;
+  }
+
+  .s3 {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+
+    animation: anim 0.1s linear 1.3s forwards;
+  }
+
+  .l1 {
+    stroke-dasharray: 2;
+    stroke-dashoffset: 2;
+
+    animation: anim 0.1s linear 1.4s forwards;
+  }
+
+  .s9 {
+    stroke-dasharray: 83;
+    stroke-dashoffset: 83;
+
+    animation: anim 0.1s linear 1.5s forwards;
+  }
+
+  .s10 {
+    stroke-dasharray: 57;
+    stroke-dashoffset: 57;
+
+    animation: anim 0.1s linear 1.6s forwards;
+  }
+
+  .s8 {
+    stroke-dasharray: 46;
+    stroke-dashoffset: 46;
+
+    animation: anim 0.1s linear 1.7s forwards;
+  }
+
+  .s7 {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+
+    animation: anim 0.1s linear 1.8s forwards;
+  }
+
+  .s6 {
+    stroke-dasharray: 56;
+    stroke-dashoffset: 56;
+
+    animation: anim 0.1s linear 1.9s forwards;
+  }
+
+  .s12 {
+    stroke-dasharray: 28;
+    stroke-dashoffset: 28;
+
+    animation: anim 0.1s linear 2s forwards;
+  }
+
+  .l2 {
+    stroke-dasharray: 2;
+    stroke-dashoffset: 2;
+
+    animation: anim 0.1s linear 2.1s forwards;
+  }
+
+  .s5 {
+    stroke-dasharray: 63;
+    stroke-dashoffset: 63;
+
+    animation: anim 0.1s linear 2.2s forwards;
+  }
+
+  .s4 {
+    stroke-dasharray: 29;
+    stroke-dashoffset: 29;
+
+    animation: anim 0.1s linear 2.3s forwards;
+  }
+
+  .s19 {
+    stroke-dasharray: 31;
+    stroke-dashoffset: 31;
+
+    animation: anim 0.1s linear 3.8s forwards;
+  }
+
+  .s20 {
+    stroke-dasharray: 29;
+    stroke-dashoffset: 29;
+
+    animation: anim 0.1s linear 3.2s forwards;
+  }
+
+  .s18 {
+    stroke-dasharray: 61;
+    stroke-dashoffset: 61;
+
+    animation: anim 0.1s linear 2.4s forwards;
+  }
+
+  .s17 {
+    stroke-dasharray: 86;
+    stroke-dashoffset: 86;
+
+    animation: anim 0.1s linear 2.5s forwards;
+  }
+
+  .s16 {
+    stroke-dasharray: 43;
+    stroke-dashoffset: 43;
+
+    animation: anim 0.2s linear 2.6s forwards;
+  }
+
+  .s15 {
+    stroke-dasharray: 51;
+    stroke-dashoffset: 51;
+
+    animation: anim 0.1s linear 2.8s forwards;
+  }
+
+  .s14 {
+    stroke-dasharray: 124;
+    stroke-dashoffset: 124;
+
+    animation: anim 0.3s linear 2.9s forwards;
+  }
+
+  .s13 {
+    stroke-dasharray: 116;
+    stroke-dashoffset: 116;
+
+    animation: anim 0.2s linear 3.6s forwards;
+  }
+
+  .s21 {
+    stroke-dasharray: 217;
+    stroke-dashoffset: 217;
+
+    animation: anim 0.3s linear 3.3s forwards;
+  }
+
+  .l3 {
+    stroke-dasharray: 2;
+    stroke-dashoffset: 2;
+
+    animation: anim 0.1s linear 3.9s forwards;
+  }
+
+  .s11 {
+    stroke-dasharray: 63;
+    stroke-dashoffset: 63;
+
+    animation: anim 0.4s linear 4s forwards;
+  }
+
+  .l4 {
+    stroke-dasharray: 55;
+    stroke-dashoffset: 55;
+
+    animation: anim 0.5s linear 4.5s forwards;
+  }
+
+  @keyframes anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.logo {
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+
+  svg {
+    stroke: #ff695a;
+    transition: 1s;
+  }
+
+  @media (max-width: 767px) {
+    width: 200px;
+  }
+}

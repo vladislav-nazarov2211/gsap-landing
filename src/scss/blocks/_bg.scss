@@ -1,0 +1,50 @@
+.bg-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .logo {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    svg {
+      stroke: #ff695a;
+    }
+  }
+}
+
+.bg {
+  object-fit: cover;
+  height: 100%;
+  scale: 1.1;
+  animation: A2 8s forwards ease;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.bg-mobile {
+  object-fit: cover;
+  height: 100%;
+  scale: 1.1;
+  animation: A2 8s forwards ease;
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+
+@keyframes A2 {
+  from {
+    scale: 1.1;
+  }
+  to {
+    scale: 1.17;
+    transform: translateX(2%);
+  }
+}

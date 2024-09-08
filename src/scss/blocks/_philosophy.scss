@@ -1,0 +1,132 @@
+.philosophy {
+  padding: 150px 0;
+
+  @media (max-width: 1199px) {
+    padding: 100px 0 89px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 0 0 0;
+  }
+
+  .btns-wrapper {
+    display: block;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .btns-wrapper.mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .philosophy-items {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+
+    .philosophy-items__element {
+      max-width: 373px;
+      overflow: hidden;
+
+      .philosophy-items__element-wrapper {
+        padding: 8px 0 0 0;
+
+        h3 {
+          margin: 12px 0 10px;
+          color: #909090;
+          font-family: "Inter";
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 30px;
+
+          @media (max-width: 767px) {
+            font-size: 14px;
+            margin: 0px 0 6px;
+            line-height: 15px;
+          }
+        }
+
+        span {
+          color: #282828;
+          font-family: "Inter";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 19px;
+
+          @media (max-width: 767px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .philosophy-items.mobile {
+    display: none;
+
+    .philosophy-items__element {
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: #f4f4f4;
+      padding-bottom: 15px;
+    }
+
+    .philosophy-items__element-wrapper {
+      padding: 23px 10px 8px 10px;
+    }
+
+    .swiper-wrapper {
+      padding-bottom: 40px;
+
+      @media (max-width: 767px) {
+        padding-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  .description__block.description__block--img {
+    display: block;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    img {
+      @media (max-width: 767px) {
+        max-height: 138px;
+        width: 100%;
+      }
+    }
+  }
+
+  .description__block.mobile {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    img {
+      @media (max-width: 767px) {
+        max-height: 138px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonid Feldblit</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./../img/favicon.ico" type="images/x-icon" />
+
+    
+  </head>
+  <body>
+    @@include('components/header.html')
+
+    <div class="wrapper">
+      <div class="content">
+        @@include('components/bg.html')
+        <div class="main">
+          @@include('components/about.html') @@include('components/idea.html')
+          @@include('components/team.html')
+          @@include('components/technologies.html')
+          @@include('components/philosophy.html')
+          @@include('components/media.html')
+        </div>
+
+        @@include('components/footer.html')
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

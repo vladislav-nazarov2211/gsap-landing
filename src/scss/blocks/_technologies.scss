@@ -1,0 +1,50 @@
+.technologies {
+  background-color: #f4f4f4;
+  padding: 100px 0 30px 0;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 30px 0 15px 0;
+  }
+
+  .technologies__text {
+    margin: 40px auto 0;
+    max-width: 1000px;
+    color: #282828;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+      margin: 15px auto 0;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      font-weight: 400;
+    }
+  }
+
+  .swiper-technologies {
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      margin-top: 15px;
+    }
+  }
+
+  .swiper-technologies__wrapper {
+    .swiper-slide {
+      aspect-ratio: 1.7 / 1;
+      overflow: hidden;
+      border-radius: 7px;
+      max-height: 78px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
